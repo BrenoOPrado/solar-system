@@ -11,7 +11,13 @@ class Missions extends React.Component {
         {
           missions.map((mission) => {
             const { name, year, country, destination } = mission;
-            return <MissionCard key={ name } name={ name } year={ year } country={ country } destination={ destination } />;
+            return (<MissionCard
+              key={ name }
+              name={ name }
+              year={ year }
+              country={ country }
+              destination={ destination }
+            />);
           })
         }
       </div>
